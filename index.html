@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso de moedas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="BotaoDark">
+        <div class="bars">
+            <p>☀️</p>
+            <p>🌙</p>
+            <div class="clear"></div>
+            <div class="pointer" style="left:3px;"></div> <!-- POINTER -->
+        </div> <!-- BARS-->
+    </div> <!-- BOTAO DARK -->
+
+    <div class="Currency">
+        <div class="container boxContentDark">
+            <h2>Converso de moeda</h2>
+
+            <div class="formulario">
+                <div class="flex">
+
+                    <div class="form-wraper">
+                        <label>Digita o valor</label>
+                        <input class="inputThemaDark" type="text" id="formatCoin" oninput="formataMoeda(event)" name="inputValue" placeholder="$1,00">
+                    </div> <!-- FORM WRAPER-->
+                    
+                    <div class="form-wraper">
+                        <label>Moeda para conversao</label>
+                        <select class="inputThemaDark" id="baseCoin">
+                            <option value="BRL">Brazilian Real</option>
+                            <option value="EUR">EURO</option>
+                            <option value="JPY">Japanese Yen</option>
+                            <option value="RUB">Russian Ruble</option>
+                            <option value="USD">United States Dollar</option>
+                        </select>
+                    </div> <!-- FORM WRAPER-->
+                    
+                    <div class="form-wraper">
+                        <label>Moeda convertida</label>
+                        <select class="inputThemaDark" id="targetCoin">
+                            <option value="BRL">Brazilian Real</option>
+                            <option value="EUR">EURO</option>
+                            <option value="JPY">Japanese Yen</option>
+                            <option value="RUB">Russian Ruble</option>
+                            <option value="USD">United States Dollar</option>
+                        </select>
+                    </div> <!-- FORM WRAPER-->
+                </div> <!-- FLEX -->
+
+                <div class="flex">
+
+                    <div class="form-wraper">
+                        <button type="button" onclick="limparInput();">Limpar</button>
+                    </div> <!-- FORM WRAPER-->
+                    
+                    <div class="form-wraper">
+                        <button type="button" onclick="requestApiJSON()">Calcular</button>
+                    </div> <!-- FORM WRAPER-->
+
+                </div> <!-- FLEX -->
+            </div> <!-- FORMULARIO -->
+
+            <div id="resultado"></div> <!-- RESULTADO -->
+
+        </div> <!-- CONTAINER -->
+    </div> <!-- CURRENCY -->
+
+    <script type="module" src="js/app.js"></script>
+    <script src="js/formatCoin.js"></script>
+    <script src="js/requestAPI.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{height: 100%;transition: 0.6s;}
+
+body[dark]{background-color: rgb(25,25,50);}
+.boxContentDark[dark]{background-color: rgb(10,14, 25,1.8);color:white !important;}
+.inputThemaDark[dark]{background-color: #1E1E32;transition: 0.6s;}
+
+
+div.Currency{
+    width: 100%;
+    height: auto;
+    padding: 0 2%;
+}
+
+div.container{
+    width: 100%;
+    max-width: 800px;
+    margin:70px auto;
+    padding: 50px 2% 70px 2%;
+    background-color: rgb(220,220,220);
+    border-top: 4px solid rgb(100,123,255);
+    transition: 0.6s;
+}
+
+
+div.Currency h2{
+    text-align: center;
+    font-size:52px;
+    margin-bottom: 30px;
+}
+
+div.formulario{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+div.formulario .flex:first-child{display: flex;justify-content: center;}
+div.formulario .flex:last-child{display: flex;justify-content: space-between;}
+
+div.form-wraper{
+    padding:0 20px;
+}
+
+div.form-wraper label{
+    display: block;
+    padding-bottom: 10px;
+    color:#5c5c5c;
+}
+
+div.form-wraper input[type=text],div.form-wraper select{
+    width: 100%;
+    padding:10px;
+    border: 1px solid #5c5c5c;
+    color:#5c5c5c;
+    border-radius: 10px;
+}
+
+div.form-wraper input[type=text],div.form-wraper select:focus{outline:none;}
+
+div.form-wraper button[type=button]{
+    width: 120px;
+    height: 30px;
+    border: 0;
+    font-size: 14px;
+    color:white;
+    margin-top: 35px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(102, 119, 217);
+    transition: 0.6s;
+}
+
+div.form-wraper button[type=button]:hover{background-color: rgb(47, 61, 138);}
+
+/**** ESTILIZANDO O BOTAO ****/
+
+div.BotaoDark{position: absolute;right:15px;top:5px;}
+
+div.bars{
+    width: 90px;
+    height: 35px;
+    background-color: rgb(230,230,230);
+    border-radius: 17px;
+    position: relative;
+}
+
+div.bars p:first-child{float: left;padding-left: 7px;line-height: 35px;}
+div.bars p:nth-of-type(2){float: right;padding-right: 7px;line-height: 35px;}
+div.clear{clear: both;}
+
+div.pointer{
+    position: absolute;
+    top:2px;
+    transition: 1s;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/**** ESTILIZANDO O BOTAO ****/
+
+
+/**** Estilizando o resultado *****/
+
+div#resultado{text-align: center;}
+div#resultado h3{font-size: 19px;padding:30px 0 20px 0;}
+div#resultado p{color:#5c5c5c;font-size: 14px;}
+
+/**** Estilizando o resultado *****/
