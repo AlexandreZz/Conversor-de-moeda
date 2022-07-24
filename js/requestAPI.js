@@ -33,7 +33,7 @@ function requestApiJSON(){
         result.innerHTML = `
             <h3>Quanto Vale ${valueInput.value}  ${baseCoin}?</h3>
             <p>${valueInput.value} ${baseCoin} = ${mascaraMoeda(valorDaMoedaCalculada)} ${targetCoin}</p>
-            <h3>Informaçoes sobre a cotacao</h3>
+            <h3>informações sobre cotação</h3>
             <p>1 ${baseCoin} = ${mascaraMoeda(cotacaoTarget)} ${targetCoin}</p>
             <p>1 ${targetCoin} = ${mascaraMoeda(1/cotacaoTarget)} ${baseCoin}</p>
         `;
